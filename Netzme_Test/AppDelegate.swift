@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("URL BOOK GOOGLE API \(kAPIURL)")
         
+        
         return true
     }
 
