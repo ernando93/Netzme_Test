@@ -1,0 +1,6 @@
+framework module Pods_Netzme_TestTests {
+  umbrella header "Pods-Netzme_TestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

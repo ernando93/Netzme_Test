@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15085A986637119937DBBA77 /* Pods_Netzme_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1D5747FCE3B6EECF1B4AF4 /* Pods_Netzme_TestUITests.framework */; };
+		22D9575C18A98AF2B5C14E17 /* Pods_Netzme_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39D1AF0680E1FCEC758E984 /* Pods_Netzme_Test.framework */; };
+		870B1F314E6A5DF0170A3B87 /* Pods_Netzme_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2550ADD112ECEAD6D8D697 /* Pods_Netzme_TestTests.framework */; };
 		9EC0A77922D5E04700B53B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A77822D5E04700B53B73 /* AppDelegate.swift */; };
 		9EC0A77B22D5E04700B53B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A77A22D5E04700B53B73 /* ViewController.swift */; };
 		9EC0A77E22D5E04700B53B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC0A77C22D5E04700B53B73 /* Main.storyboard */; };
@@ -15,6 +18,11 @@
 		9EC0A78622D5E04B00B53B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC0A78422D5E04B00B53B73 /* LaunchScreen.storyboard */; };
 		9EC0A79122D5E04B00B53B73 /* Netzme_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A79022D5E04B00B53B73 /* Netzme_TestTests.swift */; };
 		9EC0A79C22D5E04B00B53B73 /* Netzme_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A79B22D5E04B00B53B73 /* Netzme_TestUITests.swift */; };
+		9EC0A7AC22D5E6AF00B53B73 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A7AB22D5E6AF00B53B73 /* Environment.swift */; };
+		9EC0A7B422D5E8ED00B53B73 /* SingleDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A7AF22D5E8EC00B53B73 /* SingleDataResponse.swift */; };
+		9EC0A7B522D5E8ED00B53B73 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A7B022D5E8EC00B53B73 /* Response.swift */; };
+		9EC0A7B622D5E8ED00B53B73 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A7B122D5E8EC00B53B73 /* Request.swift */; };
+		9EC0A7B922D5E9CC00B53B73 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A7B822D5E9CC00B53B73 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2339AC68A38FDCEDEA24DA38 /* Pods-Netzme_TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netzme_TestUITests.release.xcconfig"; path = "Target Support Files/Pods-Netzme_TestUITests/Pods-Netzme_TestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F42DFA0241D7A8A07A492C8 /* Pods-Netzme_TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netzme_TestTests.debug.xcconfig"; path = "Target Support Files/Pods-Netzme_TestTests/Pods-Netzme_TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		721EAD4CA798380E80CDDE77 /* Pods-Netzme_Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netzme_Test.debug.xcconfig"; path = "Target Support Files/Pods-Netzme_Test/Pods-Netzme_Test.debug.xcconfig"; sourceTree = "<group>"; };
+		84E75502D7397AB59916C1F3 /* Pods-Netzme_TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netzme_TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Netzme_TestUITests/Pods-Netzme_TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A102F7B64C7E82399A7B3C7 /* Pods-Netzme_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netzme_Test.release.xcconfig"; path = "Target Support Files/Pods-Netzme_Test/Pods-Netzme_Test.release.xcconfig"; sourceTree = "<group>"; };
 		9EC0A77522D5E04700B53B73 /* Netzme_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netzme_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC0A77822D5E04700B53B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC0A77A22D5E04700B53B73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +62,16 @@
 		9EC0A79722D5E04B00B53B73 /* Netzme_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Netzme_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC0A79B22D5E04B00B53B73 /* Netzme_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netzme_TestUITests.swift; sourceTree = "<group>"; };
 		9EC0A79D22D5E04B00B53B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EC0A7AA22D5E67100B53B73 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		9EC0A7AB22D5E6AF00B53B73 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		9EC0A7AF22D5E8EC00B53B73 /* SingleDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDataResponse.swift; sourceTree = "<group>"; };
+		9EC0A7B022D5E8EC00B53B73 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		9EC0A7B122D5E8EC00B53B73 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		9EC0A7B822D5E9CC00B53B73 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CCAE2471FC6809F10103FE11 /* Pods-Netzme_TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netzme_TestTests.release.xcconfig"; path = "Target Support Files/Pods-Netzme_TestTests/Pods-Netzme_TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC2550ADD112ECEAD6D8D697 /* Pods_Netzme_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Netzme_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39D1AF0680E1FCEC758E984 /* Pods_Netzme_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Netzme_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1D5747FCE3B6EECF1B4AF4 /* Pods_Netzme_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Netzme_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D9575C18A98AF2B5C14E17 /* Pods_Netzme_Test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				870B1F314E6A5DF0170A3B87 /* Pods_Netzme_TestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +95,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15085A986637119937DBBA77 /* Pods_Netzme_TestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C2F0A1AF50401FD1483BF6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F39D1AF0680E1FCEC758E984 /* Pods_Netzme_Test.framework */,
+				DC2550ADD112ECEAD6D8D697 /* Pods_Netzme_TestTests.framework */,
+				FC1D5747FCE3B6EECF1B4AF4 /* Pods_Netzme_TestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		620F5C8B763BD9C858E8BC77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				721EAD4CA798380E80CDDE77 /* Pods-Netzme_Test.debug.xcconfig */,
+				8A102F7B64C7E82399A7B3C7 /* Pods-Netzme_Test.release.xcconfig */,
+				4F42DFA0241D7A8A07A492C8 /* Pods-Netzme_TestTests.debug.xcconfig */,
+				CCAE2471FC6809F10103FE11 /* Pods-Netzme_TestTests.release.xcconfig */,
+				84E75502D7397AB59916C1F3 /* Pods-Netzme_TestUITests.debug.xcconfig */,
+				2339AC68A38FDCEDEA24DA38 /* Pods-Netzme_TestUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9EC0A76C22D5E04700B53B73 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +132,8 @@
 				9EC0A78F22D5E04B00B53B73 /* Netzme_TestTests */,
 				9EC0A79A22D5E04B00B53B73 /* Netzme_TestUITests */,
 				9EC0A77622D5E04700B53B73 /* Products */,
+				620F5C8B763BD9C858E8BC77 /* Pods */,
+				2C2F0A1AF50401FD1483BF6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +150,8 @@
 		9EC0A77722D5E04700B53B73 /* Netzme_Test */ = {
 			isa = PBXGroup;
 			children = (
+				9EC0A7A922D5E65700B53B73 /* Setup */,
+				9EC0A7AD22D5E8EC00B53B73 /* Network Abstraction */,
 				9EC0A77822D5E04700B53B73 /* AppDelegate.swift */,
 				9EC0A77A22D5E04700B53B73 /* ViewController.swift */,
 				9EC0A77C22D5E04700B53B73 /* Main.storyboard */,
@@ -128,6 +181,34 @@
 			path = Netzme_TestUITests;
 			sourceTree = "<group>";
 		};
+		9EC0A7A922D5E65700B53B73 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				9EC0A7AA22D5E67100B53B73 /* Config.xcconfig */,
+				9EC0A7AB22D5E6AF00B53B73 /* Environment.swift */,
+				9EC0A7B822D5E9CC00B53B73 /* Constant.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		9EC0A7AD22D5E8EC00B53B73 /* Network Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				9EC0A7AE22D5E8EC00B53B73 /* Response */,
+				9EC0A7B022D5E8EC00B53B73 /* Response.swift */,
+				9EC0A7B122D5E8EC00B53B73 /* Request.swift */,
+			);
+			path = "Network Abstraction";
+			sourceTree = "<group>";
+		};
+		9EC0A7AE22D5E8EC00B53B73 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				9EC0A7AF22D5E8EC00B53B73 /* SingleDataResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC0A7A022D5E04B00B53B73 /* Build configuration list for PBXNativeTarget "Netzme_Test" */;
 			buildPhases = (
+				7BCBE66EE017B60504453D58 /* [CP] Check Pods Manifest.lock */,
 				9EC0A77122D5E04700B53B73 /* Sources */,
 				9EC0A77222D5E04700B53B73 /* Frameworks */,
 				9EC0A77322D5E04700B53B73 /* Resources */,
+				4DA28853E2D6957FDE3BFAAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC0A7A322D5E04B00B53B73 /* Build configuration list for PBXNativeTarget "Netzme_TestTests" */;
 			buildPhases = (
+				B968B94B08FB615321738F02 /* [CP] Check Pods Manifest.lock */,
 				9EC0A78822D5E04B00B53B73 /* Sources */,
 				9EC0A78922D5E04B00B53B73 /* Frameworks */,
 				9EC0A78A22D5E04B00B53B73 /* Resources */,
@@ -170,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EC0A7A622D5E04B00B53B73 /* Build configuration list for PBXNativeTarget "Netzme_TestUITests" */;
 			buildPhases = (
+				C90F7B39CF0D8FD710D84A05 /* [CP] Check Pods Manifest.lock */,
 				9EC0A79322D5E04B00B53B73 /* Sources */,
 				9EC0A79422D5E04B00B53B73 /* Frameworks */,
 				9EC0A79522D5E04B00B53B73 /* Resources */,
@@ -254,13 +339,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DA28853E2D6957FDE3BFAAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Netzme_Test/Pods-Netzme_Test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Netzme_Test/Pods-Netzme_Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BCBE66EE017B60504453D58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Netzme_Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B968B94B08FB615321738F02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Netzme_TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C90F7B39CF0D8FD710D84A05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Netzme_TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9EC0A77122D5E04700B53B73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9EC0A77B22D5E04700B53B73 /* ViewController.swift in Sources */,
+				9EC0A7AC22D5E6AF00B53B73 /* Environment.swift in Sources */,
 				9EC0A77922D5E04700B53B73 /* AppDelegate.swift in Sources */,
+				9EC0A7B922D5E9CC00B53B73 /* Constant.swift in Sources */,
+				9EC0A7B422D5E8ED00B53B73 /* SingleDataResponse.swift in Sources */,
+				9EC0A7B622D5E8ED00B53B73 /* Request.swift in Sources */,
+				9EC0A7B522D5E8ED00B53B73 /* Response.swift in Sources */,
 				9EC0A78122D5E04700B53B73 /* Netzme_Test.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +505,7 @@
 /* Begin XCBuildConfiguration section */
 		9EC0A79E22D5E04B00B53B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EC0A7AA22D5E67100B53B73 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -379,6 +567,7 @@
 		};
 		9EC0A79F22D5E04B00B53B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EC0A7AA22D5E67100B53B73 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -434,6 +623,7 @@
 		};
 		9EC0A7A122D5E04B00B53B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721EAD4CA798380E80CDDE77 /* Pods-Netzme_Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +641,7 @@
 		};
 		9EC0A7A222D5E04B00B53B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A102F7B64C7E82399A7B3C7 /* Pods-Netzme_Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +659,7 @@
 		};
 		9EC0A7A422D5E04B00B53B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F42DFA0241D7A8A07A492C8 /* Pods-Netzme_TestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +680,7 @@
 		};
 		9EC0A7A522D5E04B00B53B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCAE2471FC6809F10103FE11 /* Pods-Netzme_TestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +701,7 @@
 		};
 		9EC0A7A722D5E04B00B53B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E75502D7397AB59916C1F3 /* Pods-Netzme_TestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +721,7 @@
 		};
 		9EC0A7A822D5E04B00B53B73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2339AC68A38FDCEDEA24DA38 /* Pods-Netzme_TestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

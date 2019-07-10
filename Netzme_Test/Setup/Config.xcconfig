@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  Netzme_Test
+//
+//  Created by Ernando Kasaluhe on 10/07/19.
+//  Copyright © 2019 Ernando Kasaluhe. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+api_url  = https:/$()/www.googleapis.com/
+
