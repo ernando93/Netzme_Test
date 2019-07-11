@@ -10,6 +10,7 @@ import Foundation
 
 final class VolumeInfo: NSObject {
     var title: String
+    var authors: [String]
     var publisher: String
     var publishedDate: String
     var pageCount: Int
@@ -30,6 +31,12 @@ final class VolumeInfo: NSObject {
             self.title = title
         } else {
             self.title = ""
+        }
+        
+        if let authors = dictionary["authors"] as? [String] {
+            self.authors = authors
+        } else {
+            self.authors = []
         }
         
         if let publisher = dictionary["publisher"] as? String {

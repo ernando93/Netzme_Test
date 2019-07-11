@@ -9,3 +9,6 @@
 import Foundation
 
 let kAPIURL = Environment().configuration(PlistKey.ApiURL)
+
+let menuOptionTitle: [String] = ["Most Listings", "Newest", "Oldest"]
+let menuOptionImage: [String] = ["radio_filled", "rating_empty", "rating_empty"]

@@ -16,6 +16,9 @@ target 'Netzme_Test' do
 
   #Load and cache image
   pod 'SDWebImage', '~> 4.0'
+  
+  #Star rating control
+  pod 'Cosmos', '~> 19.0'
 
   target 'Netzme_TestTests' do
     inherit! :search_paths

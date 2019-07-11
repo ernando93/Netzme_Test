@@ -19,7 +19,7 @@ extension RequestBooks: Request {
     }
     
     var path: String {
-        return "v1/volumes?q=\(q)"
+        return "books/v1/volumes?q=\(q)"
     }
     
     var method: HTTPMethod {
