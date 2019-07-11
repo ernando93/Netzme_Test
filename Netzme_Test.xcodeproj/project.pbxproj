@@ -11,6 +11,7 @@
 		22D9575C18A98AF2B5C14E17 /* Pods_Netzme_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39D1AF0680E1FCEC758E984 /* Pods_Netzme_Test.framework */; };
 		870B1F314E6A5DF0170A3B87 /* Pods_Netzme_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC2550ADD112ECEAD6D8D697 /* Pods_Netzme_TestTests.framework */; };
 		9EAEFB7322D6DEDF003DA539 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEFB7222D6DEDF003DA539 /* SearchViewController.swift */; };
+		9EAEFB7522D72167003DA539 /* DetailBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAEFB7422D72167003DA539 /* DetailBookViewController.swift */; };
 		9EC0A77922D5E04700B53B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A77822D5E04700B53B73 /* AppDelegate.swift */; };
 		9EC0A77E22D5E04700B53B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC0A77C22D5E04700B53B73 /* Main.storyboard */; };
 		9EC0A78122D5E04700B53B73 /* Netzme_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EC0A77F22D5E04700B53B73 /* Netzme_Test.xcdatamodeld */; };
@@ -56,6 +57,7 @@
 		84E75502D7397AB59916C1F3 /* Pods-Netzme_TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netzme_TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Netzme_TestUITests/Pods-Netzme_TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A102F7B64C7E82399A7B3C7 /* Pods-Netzme_Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Netzme_Test.release.xcconfig"; path = "Target Support Files/Pods-Netzme_Test/Pods-Netzme_Test.release.xcconfig"; sourceTree = "<group>"; };
 		9EAEFB7222D6DEDF003DA539 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9EAEFB7422D72167003DA539 /* DetailBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookViewController.swift; sourceTree = "<group>"; };
 		9EC0A77522D5E04700B53B73 /* Netzme_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netzme_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC0A77822D5E04700B53B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC0A77D22D5E04700B53B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			children = (
 				9EC1650922D64251007B207C /* Cell */,
 				9EAEFB7222D6DEDF003DA539 /* SearchViewController.swift */,
+				9EAEFB7422D72167003DA539 /* DetailBookViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				9EC0A7B622D5E8ED00B53B73 /* Request.swift in Sources */,
 				9EC0A7B522D5E8ED00B53B73 /* Response.swift in Sources */,
 				9EC0A78122D5E04700B53B73 /* Netzme_Test.xcdatamodeld in Sources */,
+				9EAEFB7522D72167003DA539 /* DetailBookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

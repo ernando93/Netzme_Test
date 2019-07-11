@@ -8,17 +8,20 @@
 
 import UIKit
 import SDWebImage
+import Cosmos
 
 class BooksTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageBookCover: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var ratingView: CosmosView!
     @IBOutlet weak var labelAuthor: UILabel!
     @IBOutlet weak var labelPublish: UILabel!
     @IBOutlet weak var labelDate: UILabel!
     
     func configureCell(data: Items) {
         let author = data.volumeInfo?.authors.joined(separator: ",") ?? ""
+        ratingView.rating = data.volumeInfo?.averageRating ?? 0.0
         setupViewContent(imageUrl: data.volumeInfo?.imageLinks?.thumbnail ?? "", title: data.volumeInfo?.title ?? "", author: author, publish: data.volumeInfo?.publisher ?? "", date: data.volumeInfo?.publishedDate ?? "")
     }
 }

@@ -114,7 +114,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 160.0
+        return 170.0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -127,5 +127,17 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         } else {
             return BooksTableViewCell()
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let data = items[indexPath.row]
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "detailVC") as! DetailBookViewController
+        vc.volumeInfo = data.volumeInfo
+        self.addChild(vc)
+        vc.view.frame = self.view.frame
+        self.view.addSubview(vc.view)
+        vc.didMove(toParent: self)
+        
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
