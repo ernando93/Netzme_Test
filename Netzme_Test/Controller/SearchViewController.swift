@@ -19,6 +19,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var labelCount: UILabel!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var labelText: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,7 @@ extension SearchViewController {
         setupSearchView(view: searchView)
         setupTextField(textField: searchTextField)
         setupTableView(tableView: tableView)
+        tableView.isHidden = items.count == 0 ? true : false
     }
     
     func setupSearchView(view: UIView) {
@@ -82,9 +84,13 @@ extension SearchViewController {
                 self.results = response
                 self.items = response.items
                 self.labelCount.text = "\(response.totalItems) Results"
+                self.tableView.isHidden = response.items.count == 0 ? true : false
+                self.labelText.text = text.count >= 3 && response.items.count == 0 ? "Nothing result :(" : "Search your favorite book"
                 self.tableView.reloadData()
             case .failure(let error):
                 print(error)
+                self.tableView.isHidden = self.items.count == 0 ? true : false
+                self.labelText.text = "Something wrong"
             }
         }
     }
@@ -95,13 +101,15 @@ extension SearchViewController: UITextFieldDelegate {
     @objc func textFieldDidChange(textField: UITextField) {
         if textField.text != "" {
             if textField.text!.count >= 3 {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                     self.requestBookAPI(text: textField.text ?? "")
                 }
             }
         } else {
             labelCount.text = "0 Results"
+            labelText.text = "Search your favorite book"
             items.removeAll()
+            tableView.isHidden = items.count == 0 ? true : false
             tableView.reloadData()
         }
     }
@@ -131,7 +139,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let data = items[indexPath.row]
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "detailVC") as! DetailBookViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "detailVC") as! DetailBookViewController
         vc.volumeInfo = data.volumeInfo
         self.addChild(vc)
         vc.view.frame = self.view.frame

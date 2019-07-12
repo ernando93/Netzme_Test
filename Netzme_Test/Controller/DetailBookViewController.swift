@@ -22,6 +22,9 @@ class DetailBookViewController: UIViewController {
     @IBOutlet weak var labelcategory: UILabel!
     @IBOutlet weak var ratingView: CosmosView!
     @IBOutlet weak var labelRating: UILabel!
+    @IBOutlet weak var buttonBuy: UIButton!
+    @IBOutlet weak var buttonPreview: UIButton!
+    @IBOutlet weak var buttonInfo: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +47,13 @@ extension DetailBookViewController {
         labelcategory.text = category
         ratingView.rating = volumeInfo?.averageRating ?? 0.0
         labelRating.text = "\(volumeInfo?.ratingsCount ?? 0) Ratings"
+        
+        buttonBuy.tag = 0
+        setupButtonDetail(withButton: buttonBuy)
+        buttonPreview.tag = 1
+        setupButtonDetail(withButton: buttonPreview)
+        buttonInfo.tag = 2
+        setupButtonDetail(withButton: buttonInfo)
     }
     
     func showAnimate() {
@@ -88,11 +98,38 @@ extension DetailBookViewController {
         self.viewContainer.layer.add(transition, forKey: nil)
         removeAnimate()
     }
+    
+    func setupButtonDetail(withButton button: UIButton) {
+        button.layer.cornerRadius = 8.0
+        button.clipsToBounds = true
+        button.addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
+    }
 }
 
 //MARK: - Action
 extension DetailBookViewController {
     @IBAction func buttonBack(_ sender: UIButton) {
         setupHideViewContainer()
+    }
+    
+    @objc func buttonTapped(button: UIButton) {
+        
+        switch button.tag {
+            
+        case 0:
+            openURLButtonTapped(withURL: volumeInfo?.infoLink ?? "")
+        case 1:
+            openURLButtonTapped(withURL: volumeInfo?.previewLink ?? "")
+        case 2:
+            openURLButtonTapped(withURL: volumeInfo?.canonicalVolumeLink ?? "")
+        default:
+            print("Default")
+        }
+    }
+    
+    func openURLButtonTapped(withURL url: String) {
+        if let url = URL(string: url) {
+            UIApplication.shared.open(url)
+        }
     }
 }
